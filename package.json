@@ -1,0 +1,23 @@
+{
+  "name": "acd_streamline_upload_download",
+  "version": "0.0.1",
+  "description": "Workaround for the 10GB upload bug in Amazon Cloud Drive API. A simple script to facilitate the process. Hook it to a downloader and let it upload your download automatically. Make use of this great [acd_cli](https://github.com/yadayada/acd_cli)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://JeffOwOSun@github.com/JeffOwOSun/acd_compress_and_upload.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeffOwOSun/acd_compress_and_upload/issues"
+  },
+  "homepage": "https://github.com/JeffOwOSun/acd_compress_and_upload#readme",
+  "dependencies": {
+    "shelljs": "^0.5.3"
+  }
+}

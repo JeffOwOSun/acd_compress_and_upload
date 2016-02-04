@@ -2,7 +2,7 @@
 TMP_DIR=/tmp/acd_compress/
 LOCAL_DIR=$1
 REMOTE_DIR=$2
-VOLUME_SIZE=4000m
+VOLUME_SIZE=4g
 
 #remove existing riles if any
 rm $TMP_DIR$(basename $LOCAL_DIR).7z*

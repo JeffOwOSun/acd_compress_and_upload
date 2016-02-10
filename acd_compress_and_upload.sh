@@ -9,13 +9,13 @@ VOLUME_SIZE=4g
 BASE_NAME=$(basename $LOCAL_DIR)
 REMOTE_DIR=$REMOTE_DIR/$BASE_NAME
 
-#remove existing riles if any
-rm $TMP_DIR$BASE_NAME.7z*
+#remove existing files if any
+#rm $TMP_DIR$BASE_NAME.7z*
 
 #===============upload a flag==================
 
 #TODO flag for upload started
-acd_cli mkdir -p $REMOTE_DIR/$BASE_NAME
+acd_cli mkdir -p $REMOTE_DIR
 
 #===============upload the files===============
 
@@ -25,10 +25,10 @@ mkdir -p $TMP_DIR
 
 #upload it
 acd_cli sync
-acd_cli upload -max-connections 8 $TMP_DIR$(basename $LOCAL_DIR).7z* $REMOTE_DIR$(basename $LOCAL_DIR)
+acd_cli upload -x 8 $TMP_DIR$(basename $LOCAL_DIR).7z* $REMOTE_DIR
 
 #remove 7z files
-rm $TMP_DIR$(basename $LOCAL_DIR).7z*
+#rm $TMP_DIR$(basename $LOCAL_DIR).7z*
 
 #===============upload a flag==================
 
